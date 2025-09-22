@@ -7,3 +7,5 @@
 *.iml
 out
 gen
+data_process_tools/patch_data
+data_process_tools/train_data
