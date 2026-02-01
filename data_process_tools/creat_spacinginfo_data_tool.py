@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 25/05/2020 16:36
-# @Author  : BubblyYi
-# @FileName: creat_spacinginfo_data_tool.py
-# @Software: PyCharm
+
 
 import SimpleITK as sitk
 import pandas as pd

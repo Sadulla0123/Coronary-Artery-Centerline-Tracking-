@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 14/05/2020 15:33
-# @Author  : BubblyYi
-# @FileName: seedspoints_net.py
-# @Software: PyCharm
+
 import torch.nn as nn
 
 class conv_block(nn.Module):

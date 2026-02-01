@@ -1,9 +1,3 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 04/02/2020 10:58
-# @Author  : Lijiannan
-# @Update  : BubblyYi
-# @FileName: data_provider.py
-# @Software: PyCharm
 
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader

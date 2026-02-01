@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 04/08/2020 15:38
-# @Author  : QYD
-# @FileName: dijstra.py
-# @Software: PyCharm
+
 
 import heapq
 import numpy as np

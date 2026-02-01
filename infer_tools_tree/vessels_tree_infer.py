@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 04/08/2020 16:33
-# @Author  : QYD
-# @FileName: vessles_tree_infer.py
-# @Software: PyCharm
+
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt

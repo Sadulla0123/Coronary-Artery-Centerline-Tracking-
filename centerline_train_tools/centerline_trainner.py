@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 14/05/2020 16:48
-# @Author  : BubblyYi
-# @FileName: trainner.py
-# @Software: PyCharm
+
 
 import os
 import matplotlib

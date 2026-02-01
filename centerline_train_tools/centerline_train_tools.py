@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 14/05/2020 17:56
-# @Author  : BubblyYi
-# @FileName: train_tools.py
-# @Software: PyCharm
+
 import sys
 sys.path.append('..')
 from models.centerline_net import CenterlineNet

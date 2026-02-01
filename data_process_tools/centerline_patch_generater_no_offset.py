@@ -1,8 +1,3 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 12/05/2020 20:06
-# @Author  : BubblyYi
-# @FileName: patch_generater.py
-# @Software: PyCharm
 
 import SimpleITK as sitk
 import numpy as np

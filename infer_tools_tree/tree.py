@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 04/08/2020 15:38
-# @Author  : QYD
-# @FileName: tree.py
-# @Software: PyCharm
+
 
 class TreeNode(object):
     def __init__(self, value, start_point_index):

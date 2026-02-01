@@ -1,8 +1,4 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 04/02/2020 10:58
-# @Author  : BubblyYi
-# @FileName: ostia_net_data_provider_aug.py
-# @Software: PyCharm
+
 
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
