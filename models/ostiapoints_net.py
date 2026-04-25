@@ -1,5 +1,6 @@
-
+import torch
 import torch.nn as nn
+from torchinfo import summary
 
 class conv_block(nn.Module):
     def __init__(self, chann_in, chann_out, k_size, stride, p_size, dilation=1):
@@ -37,3 +38,8 @@ class OstiapointsNet(nn.Module):
         out = self.layer6(out)
         out = self.layer7(out)
         return out
+
+
+if __name__ == "__main__":
+    model = OstiapointsNet()
+    summary(model, input_size=(1,1,64,64,64))

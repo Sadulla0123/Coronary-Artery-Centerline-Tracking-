@@ -1,5 +1,5 @@
-
-
+import torch
+from torchinfo import summary
 import torch.nn as nn
 
 class conv_block(nn.Module):
@@ -40,3 +40,7 @@ class CenterlineNet(nn.Module):
         out = self.layer7(out)
 
         return out
+
+if __name__ == "__main__":
+    model = CenterlineNet()
+    summary(model, input_size=(1,1,64,64,64))
