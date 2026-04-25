@@ -1,114 +1,203 @@
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import os
+
 from generate_seeds_ositas import search_seeds_ostias
 from setting import setting_info
 from build_vessel_tree import build_vessel_tree, TreeNode, dfs_search_tree
 from utils import save_info
-import os
+
+
+# -------------------------------------------------
+# Create output folders
+# -------------------------------------------------
+os.makedirs(setting_info["seeds_gen_info_to_save"], exist_ok=True)
+os.makedirs(setting_info["ostias_gen_info_to_save"], exist_ok=True)
+os.makedirs(setting_info["infer_line_to_save"], exist_ok=True)
+os.makedirs(setting_info["fig_to_save"], exist_ok=True)
+
+
+# -------------------------------------------------
+# Detect seeds and ostias
+# -------------------------------------------------
+print("search seeds and ostias")
 
 res_seeds, res_ostia = search_seeds_ostias()
-seeds_gen_info_to_save = os.path.join(setting_info["seeds_gen_info_to_save"], "seeds.csv")
-ostias_gen_info_to_save = os.path.join(setting_info["ostias_gen_info_to_save"], "ostias.csv")
-infer_line_to_save = setting_info["infer_line_to_save"]
-fig_to_save = setting_info["fig_to_save"]
-reference_path = setting_info["reference_path"]
-save_info(res_seeds, path=seeds_gen_info_to_save)
-save_info(res_ostia, path=ostias_gen_info_to_save)
-seeds = pd.read_csv(seeds_gen_info_to_save)[["x", "y", "z"]].values
+
+seeds_csv = os.path.join(setting_info["seeds_gen_info_to_save"], "seeds.csv")
+ostias_csv = os.path.join(setting_info["ostias_gen_info_to_save"], "ostias.csv")
+
+save_info(res_seeds, seeds_csv)
+save_info(res_ostia, ostias_csv)
+
+seeds = pd.read_csv(seeds_csv)[["x", "y", "z"]].values
+ostia_candidates = pd.read_csv(ostias_csv)[["x", "y", "z"]].values
+
+
+# -------------------------------------------------
+# Cluster seeds (reduce noisy seeds)
+# -------------------------------------------------
+print("clustering seeds")
+
+clustered_seeds = []
+min_dist = 6
+
+for s in seeds:
+    keep = True
+    for cs in clustered_seeds:
+        if np.linalg.norm(s - cs) < min_dist:
+            keep = False
+            break
+    if keep:
+        clustered_seeds.append(s)
+
+seeds = np.array(clustered_seeds)
+
+print("Seeds after clustering:", len(seeds))
+
+
+# -------------------------------------------------
+# Select 2 farthest ostia
+# -------------------------------------------------
+print("selecting ostia")
+
+if len(ostia_candidates) < 2:
+    print("Not enough ostia detected")
+    exit()
 
 ostias = []
-head_node_list = pd.read_csv(ostias_gen_info_to_save)[["x", "y", "z"]].values
-ostias_thr = 10
-node_first = head_node_list[0]
-ostias.append(node_first.tolist())
-for node in head_node_list:
-    if np.linalg.norm(node - node_first) > ostias_thr:
+
+first = ostia_candidates[0]
+ostias.append(first.tolist())
+
+for node in ostia_candidates:
+    if np.linalg.norm(node - first) > 10:
         ostias.append(node.tolist())
         break
-if len(ostias)<2:
-    print("not find 2 ostia points")
-else:
-    print("build vessel tree")
-    root = TreeNode(ostias, start_point_index=None)
-    build_vessel_tree(seeds, root=root)
-    single_tree = dfs_search_tree(root)
-    vessel_tree_postprocess = []
-    for vessel_list in single_tree:
-        vessel_list.pop(0)
-        res = np.array([]).reshape(0, 3)
-        while vessel_list:
-            first_node = vessel_list[0]
-            first_res = first_node.value
-            vessel_list.pop(0)
-            if vessel_list:
-                second_node = vessel_list[0]
-                first_res = first_res[:second_node.start_point_index]
-                res = np.vstack((res, first_res))
-            else:
-                res = np.vstack((res, first_res))
-                vessel_tree_postprocess.append(res)
+
+if len(ostias) < 2:
+    print("Could not find 2 separate ostia")
+    exit()
+
+print("Selected ostias:", ostias)
+
+
+# -------------------------------------------------
+# Build vessel tree
+# -------------------------------------------------
+print("build vessel tree")
+
+root = TreeNode(np.array(ostias), start_point_index=None)
+
+build_vessel_tree(seeds, root)
+
+single_tree = dfs_search_tree(root)
+
+
+# -------------------------------------------------
+# Postprocess vessels
+# -------------------------------------------------
+vessel_tree_postprocess = []
+
+for vessel in single_tree:
+
+    if vessel is None:
+        continue
+
+    if len(vessel) < 10:
+        continue
+
+    vessel_tree_postprocess.append(vessel)
+
+
+print("Total vessels:", len(vessel_tree_postprocess))
+
+
+# -------------------------------------------------
+# Save vessels
+# -------------------------------------------------
+save_path = setting_info["infer_line_to_save"]
+
+for i, vessel in enumerate(vessel_tree_postprocess):
+    np.savetxt(os.path.join(save_path, f"vessel_{i}.txt"), vessel)
+
+
+# -------------------------------------------------
+# Plot inferred vessels
+# -------------------------------------------------
+fig_dir = setting_info["fig_to_save"]
+
+if len(vessel_tree_postprocess) > 0:
+
+    fig = plt.figure()
+    ax = fig.add_subplot(111, projection='3d')
+
     for i, vessel in enumerate(vessel_tree_postprocess):
-        np.savetxt(infer_line_to_save + "/vessel_{}.txt".format(i), vessel)
-    ax = plt.axes(projection='3d')
-    for i, vessel in enumerate(vessel_tree_postprocess):
-        ax.scatter(vessel[..., 0], vessel[..., 1], vessel[..., 2], label=" infer {}".format(i))
-    ax.set_xlabel('X')
-    ax.set_ylabel('Y')
-    ax.set_zlabel('Z')
+        ax.plot(vessel[:,0], vessel[:,1], vessel[:,2], label=f"infer {i}")
+
+    ax.set_xlabel("X")
+    ax.set_ylabel("Y")
+    ax.set_zlabel("Z")
+
     ax.legend()
-    plt.rcParams['savefig.dpi'] = 300
-    plt.rcParams['figure.dpi'] = 300
-    plt.savefig(fig_to_save + "/infer_tree_new.jpg")
-    ax1 = plt.axes(projection='3d')
-    for i in range(4):
-        res = np.loadtxt(reference_path + "/vessel{}/reference.txt".format(i))
-        ax1.scatter(res[..., 0], res[..., 1], res[..., 2], label="refer vessel {}".format(i))
-    for i, vessel in enumerate(vessel_tree_postprocess):
-        ax1.scatter(vessel[..., 0], vessel[..., 1], vessel[..., 2], label=" infer {}".format(i))
-    ax1.set_xlabel('X')
-    ax1.set_ylabel('Y')
-    ax1.set_zlabel('Z')
-    ax1.legend()
-    plt.rcParams['savefig.dpi'] = 300
-    plt.rcParams['figure.dpi'] = 300
-    plt.savefig(fig_to_save + '/refer_infer_tree.jpg')
-    ax2 = plt.axes(projection='3d')
-    for i in range(4):
-        res = np.loadtxt(reference_path + "/vessel{}/reference.txt".format(i))
-        ax2.scatter(res[..., 0], res[..., 1], res[..., 2], label="refer vessel{}".format(i))
-    ax2.set_xlabel('X')
-    ax2.set_ylabel('Y')
-    ax2.set_zlabel('Z')
-    ax2.legend()
-    plt.rcParams['savefig.dpi'] = 300
-    plt.rcParams['figure.dpi'] = 300
-    plt.savefig(fig_to_save + '/refer_tree.jpg')
 
-    ax3 = plt.axes(projection='3d')
-    seeds_point = pd.read_csv(seeds_gen_info_to_save)[["x", "y", "z"]].values
-    ax3.scatter(seeds_point[..., 0], seeds_point[..., 1], seeds_point[..., 2], label="generation seeds_point")
-    ax3.set_xlabel('X')
-    ax3.set_ylabel('Y')
-    ax3.set_zlabel('Z')
-    ax3.legend()
-    plt.rcParams['savefig.dpi'] = 300
-    plt.rcParams['figure.dpi'] = 300
-    plt.savefig(
-        fig_to_save + '/seeds_points.jpg')
+    plt.savefig(os.path.join(fig_dir,"infer_tree_new.jpg"))
+    plt.close()
 
-    ax4 = plt.axes(projection='3d')
-    seeds_point = pd.read_csv(seeds_gen_info_to_save)[["x", "y", "z"]].values
-    for i in range(4):
-        res = np.loadtxt(reference_path + "/vessel{}/reference.txt".format(i))
-        ax4.scatter(res[..., 0], res[..., 1], res[..., 2], label="refer vessel{}".format(i))
-    ax4.scatter(seeds_point[..., 0], seeds_point[..., 1], seeds_point[..., 2], label="generation seeds_point")
-    ax4.set_xlabel('X')
-    ax4.set_ylabel('Y')
-    ax4.set_zlabel('Z')
-    ax4.legend()
-    plt.rcParams['savefig.dpi'] = 300
-    plt.rcParams['figure.dpi'] = 300
-    plt.savefig(
-        fig_to_save + "/seeds_points.jpg")
+else:
+    print("No vessels to plot")
+
+
+# -------------------------------------------------
+# Plot reference vs inference
+# -------------------------------------------------
+reference_path = setting_info["reference_path"]
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+# reference vessels
+for i in range(4):
+
+    ref_file = os.path.join(reference_path, f"vessel{i}/reference.txt")
+
+    if os.path.exists(ref_file):
+
+        ref = np.loadtxt(ref_file)
+
+        ax.plot(ref[:,0], ref[:,1], ref[:,2], label=f"ref {i}")
+
+
+# inferred vessels
+for i, vessel in enumerate(vessel_tree_postprocess):
+    ax.plot(vessel[:,0], vessel[:,1], vessel[:,2], label=f"infer {i}")
+
+
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
+
+ax.legend()
+
+plt.savefig(os.path.join(fig_dir,"refer_infer_tree.jpg"))
+plt.close()
+
+
+# -------------------------------------------------
+# Plot seeds
+# -------------------------------------------------
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+ax.scatter(seeds[:,0], seeds[:,1], seeds[:,2], s=5)
+
+ax.set_xlabel("X")
+ax.set_ylabel("Y")
+ax.set_zlabel("Z")
+
+plt.savefig(os.path.join(fig_dir,"seeds_points.jpg"))
+plt.close()
+
+
+print("Inference finished.")

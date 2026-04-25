@@ -1,9 +1,3 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 14/05/2020 16:48
-# @Author  : BubblyYi
-# @FileName: seeds_trainner.py
-# @Software: PyCharm
-
 import os
 import matplotlib
 matplotlib.use('AGG')

@@ -1,61 +1,120 @@
-# -*- coding: UTF-8 -*-
-# @Time    : 14/05/2020 17:56
-# @Author  : BubblyYi
-# @FileName: seeds_train_tools.py
-# @Software: PyCharm
+import os
 import sys
 sys.path.append('..')
+
+import torch
+from torch.utils.data import ConcatDataset
+
 from models.seedspoints_net import SeedspointsNet
 from seeds_net_data_provider_aug import DataGenerater
 from seeds_trainner import Trainer
-import torch
 
-def get_dataset(save_num = 0):
-    # Replace these paths to the path where you store the data
-    train_data_info_path = "/Coronary-Artery-Tracking-via-3D-CNN-Classification/data_process_tools/patch_data/seeds_patch/train_save_d"+str(save_num)+"_train.csv"
-    train_pre_fix_path = "/Coronary-Artery-Tracking-via-3D-CNN-Classification/data_process_tools/patch_data/seeds_patch"
-    train_flag = 'train'
-    train_transforms = None
-    target_transform = None
-    train_dataset = DataGenerater(train_data_info_path, train_pre_fix_path, train_transforms, train_flag, target_transform)
 
-    val_data_info_path = "/Coronary-Artery-Tracking-via-3D-CNN-Classification/data_process_tools/patch_data/seeds_patch/train_save_d"+str(save_num)+"_val.csv"
-    val_pre_fix_path = "/Coronary-Artery-Tracking-via-3D-CNN-Classification/data_process_tools/patch_data/seeds_patch"
-    val_flag = 'val'
-    test_valid_transforms = None
-    target_transform = None
-    val_dataset = DataGenerater(val_data_info_path, val_pre_fix_path, test_valid_transforms, val_flag, target_transform)
+# ==========================================================
+# LOAD ALL DATASETS d0–d6
+# ==========================================================
+def get_dataset_all():
+
+    BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+    # 🔴 MUST END AT patch_data
+    pre_fix_path = os.path.join(
+        BASE_DIR,
+        "..",
+        "data_process_tools",
+        "patch_data"
+    )
+
+    train_sets = []
+    val_sets = []
+
+    for save_num in range(7):
+
+        train_csv = os.path.join(
+            BASE_DIR,
+            "..",
+            "data_process_tools",
+            "patch_data",
+            "seeds_patch",
+            f"train_save_d{save_num}_train.csv"
+        )
+
+        val_csv = os.path.join(
+            BASE_DIR,
+            "..",
+            "data_process_tools",
+            "patch_data",
+            "seeds_patch",
+            f"train_save_d{save_num}_val.csv"
+        )
+
+        if not os.path.exists(train_csv):
+            print(f"[SKIP] Missing train CSV d{save_num}")
+            continue
+
+        if not os.path.exists(val_csv):
+            print(f"[SKIP] Missing val CSV d{save_num}")
+            continue
+
+        print(f"Loading seedpoints dataset d{save_num}")
+
+        train_sets.append(
+            DataGenerater(train_csv, pre_fix_path, None, "train", None)
+        )
+
+        val_sets.append(
+            DataGenerater(val_csv, pre_fix_path, None, "val", None)
+        )
+
+    train_dataset = ConcatDataset(train_sets)
+    val_dataset = ConcatDataset(val_sets)
 
     return train_dataset, val_dataset
 
 
+# ==========================================================
+# MAIN
+# ==========================================================
 if __name__ == '__main__':
 
-    # Here we use 8 fold cross validation, save_num means to use dataset0x as the validation set
-    save_num = 1
-    train_dataset, val_dataset = get_dataset(save_num)
-    curr_model_name = "seedspoints_net"
+    print("=== SEEDPOINTS TRAINING STARTED (d0–d6) ===")
+
+    train_dataset, val_dataset = get_dataset_all()
+
+    print("Total train dataset size:", len(train_dataset))
+    print("Total val dataset size:", len(val_dataset))
+
+    if len(train_dataset) == 0:
+        raise RuntimeError("Dataset EMPTY — check merged CSVs")
+
+    curr_model_name = "seedspoints_net_all"
     model = SeedspointsNet()
 
     batch_size = 64
-    num_workers = 16
+    num_workers = 0   # safer on Ubuntu lab machines
 
     criterion = torch.nn.MSELoss()
-    inital_lr = 0.001
+    initial_lr = 0.001
 
-    optimizer = torch.optim.Adam(filter(lambda p: p.requires_grad, model.parameters()), lr=inital_lr,weight_decay=0.001)
+    optimizer = torch.optim.Adam(
+        filter(lambda p: p.requires_grad, model.parameters()),
+        lr=initial_lr,
+        weight_decay=0.001
+    )
 
-    trainer = Trainer(batch_size,
-                      num_workers,
-                      train_dataset,
-                      val_dataset,
-                      model,
-                      curr_model_name,
-                      optimizer,
-                      criterion,
-                      start_epoch=0,
-                      max_epoch=100,
-                      save_num = save_num,
-                      initial_lr=inital_lr)
+    trainer = Trainer(
+        batch_size,
+        num_workers,
+        train_dataset,
+        val_dataset,
+        model,
+        curr_model_name,
+        optimizer,
+        criterion,
+        start_epoch=0,
+        max_epoch=100,
+        save_num=0,
+        initial_lr=initial_lr
+    )
 
     trainer.run_train()

@@ -1,14 +1,14 @@
 # Replace the path to your current storage path
-checkpoint_path_infer: /checkpoint/classification_checkpoints/centerline_net_model_s1.pkl
-checkpoint_path_ostia: /checkpoint/ostia_checkpoints/ostiapoints_net_model_s1.pkl
-checkpoint_path_seeds: /checkpoint/seeds_checkpoints/seedspoints_net_model_s1.pkl
-file_name: /data_process_tools/train_data/dataset01/image01.mhd
-reference_path: /data_process_tools/train_data/dataset01
-seeds_gen_info_to_save: result/result01/seeds_ostias_res
-ostias_gen_info_to_save: result/result01/seeds_ostias_res
-infer_line_to_save: result/result01/vessel_res
-fig_to_save: result/result01/fig_res
+checkpoint_path_infer: /home/sachinm/Desktop/CA/Coronary-Artery-Centerline-Tracking-/checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl
+checkpoint_path_ostia: /home/sachinm/Desktop/CA/Coronary-Artery-Centerline-Tracking-/checkpoint/ostia_checkpoints/ostiapoints_net_all_model_s0.pkl
+checkpoint_path_seeds: /home/sachinm/Desktop/CA/Coronary-Artery-Centerline-Tracking-/checkpoint/seeds_checkpoints/seedspoints_net_all_model_s0.pkl
+file_name: /home/sachinm/Desktop/CA/Coronary-Artery-Centerline-Tracking-/data_process_tools/train_data/dataset00/image00.nii
+reference_path: /home/sachinm/Desktop/CA/Coronary-Artery-Centerline-Tracking-/data_process_tools/train_data/dataset00/
+seeds_gen_info_to_save: result/result00/seeds_ostias_res
+ostias_gen_info_to_save: result/result00/seeds_ostias_res
+infer_line_to_save: result/result00/vessel_res
+fig_to_save: result/result00/fig_res
 max_points: 500
-gpuid: 7
+gpuid: 0
 prob_thr: 0.85
 max_size: [200,10]
