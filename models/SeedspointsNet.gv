@@ -1,4 +1,4 @@
-strict digraph CenterlineNet {
+strict digraph SeedspointsNet {
 	graph [ordering=in rankdir=TB size="12.299999999999999,12.299999999999999"]
 	node [align=left fontname="Linux libertine" fontsize=10 height=0.2 margin=0 ranksep=0.1 shape=plaintext style=filled]
 	edge [fontsize=10]
@@ -251,13 +251,13 @@ strict digraph CenterlineNet {
                     </TR>
                     <TR>
                         <TD COLSPAN="2">output: </TD>
-                        <TD COLSPAN="2">(1, 101, 46, 46, 46) </TD>
+                        <TD COLSPAN="2">(1, 1, 46, 46, 46) </TD>
                     </TR>
                     </TABLE>> fillcolor=darkseagreen1]
 	20 [label=<
                     <TABLE BORDER="0" CELLBORDER="1"
                     CELLSPACING="0" CELLPADDING="4">
-                        <TR><TD>output-tensor<BR/>depth:0</TD><TD>(1, 101, 46, 46, 46)</TD></TR>
+                        <TR><TD>output-tensor<BR/>depth:0</TD><TD>(1, 1, 46, 46, 46)</TD></TR>
                     </TABLE>> fillcolor=lightyellow]
 	0 -> 1
 	1 -> 2

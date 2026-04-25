@@ -50,7 +50,7 @@ if __name__ == "__main__":
     draw_graph(
         model,
         input_size=(1,1,64,64,64),
-        graph_name="CenterlineNet",
+        graph_name="OstiapointsNet",
         save_graph=True
     )
 
