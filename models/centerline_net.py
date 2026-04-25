@@ -44,3 +44,14 @@ class CenterlineNet(nn.Module):
 if __name__ == "__main__":
     model = CenterlineNet()
     summary(model, input_size=(1,1,64,64,64))
+    # your model classes above...
+    from torchview import draw_graph
+
+
+    draw_graph(
+        model,
+        input_size=(1,1,64,64,64),
+        graph_name="CenterlineNet",
+        save_graph=True
+    )
+
