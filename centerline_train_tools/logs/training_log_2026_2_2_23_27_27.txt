@@ -1,0 +1,31 @@
+Starting... 
+2026-02-02 23:27:27.735693: 
+Epoch:  1 
+2026-02-02 23:27:34.685894: Train Loss:31.81803 Direction Train Loss:7.15157 Radius Train Loss:1.64443 
+2026-02-02 23:27:38.782997: Val Loss:18.35717 Direction Val Loss:6.95995 Radius Val Loss:0.75981 
+2026-02-02 23:27:38.789395: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_debug_model_s1.pkl 
+2026-02-02 23:27:39.212494: Learning rate adjusted to 0.001 
+2026-02-02 23:27:39.212589: 
+Epoch:  2 
+2026-02-02 23:27:44.016834: Train Loss:10.39076 Direction Train Loss:6.79030 Radius Train Loss:0.24003 
+2026-02-02 23:27:48.162933: Val Loss:7.43111 Direction Val Loss:6.58405 Radius Val Loss:0.05647 
+2026-02-02 23:27:48.169523: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_debug_model_s1.pkl 
+2026-02-02 23:27:48.374663: Learning rate adjusted to 0.0007155417527999328 
+2026-02-02 23:27:48.374752: 
+Epoch:  3 
+2026-02-02 23:27:53.193235: Train Loss:7.21220 Direction Train Loss:6.49275 Radius Train Loss:0.04796 
+2026-02-02 23:27:57.299352: Val Loss:6.79679 Direction Val Loss:6.37038 Radius Val Loss:0.02843 
+2026-02-02 23:27:57.305994: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_debug_model_s1.pkl 
+2026-02-02 23:27:57.532678: Learning rate adjusted to 0.00046475800154489 
+2026-02-02 23:27:57.532770: 
+Epoch:  4 
+2026-02-02 23:28:02.364288: Train Loss:6.71024 Direction Train Loss:6.31670 Radius Train Loss:0.02624 
+2026-02-02 23:28:06.522358: Val Loss:6.43150 Direction Val Loss:6.21839 Radius Val Loss:0.01421 
+2026-02-02 23:28:06.528861: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_debug_model_s1.pkl 
+2026-02-02 23:28:06.739086: Learning rate adjusted to 0.0002529822128134704 
+2026-02-02 23:28:06.739176: 
+Epoch:  5 
+2026-02-02 23:28:11.463202: Train Loss:6.51689 Direction Train Loss:6.20955 Radius Train Loss:0.02049 
+2026-02-02 23:28:15.695039: Val Loss:6.38850 Direction Val Loss:6.16688 Radius Val Loss:0.01477 
+2026-02-02 23:28:15.702017: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_debug_model_s1.pkl 
+2026-02-02 23:28:15.944129: Learning rate adjusted to 8.944271909999156e-05 

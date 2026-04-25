@@ -1,0 +1,578 @@
+Starting... 
+2026-02-21 13:11:48.152530: 
+Epoch:  1 
+2026-02-21 13:15:04.692426: Train Loss:5.85512 Direction Train Loss:3.04165 Radius Train Loss:0.18757 
+2026-02-21 13:15:51.778736: Val Loss:3.95060 Direction Val Loss:2.97976 Radius Val Loss:0.06472 
+2026-02-21 13:15:51.817647: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:15:52.917299: Learning rate adjusted to 0.001 
+2026-02-21 13:15:52.928155: 
+Epoch:  2 
+2026-02-21 13:17:19.396535: Train Loss:3.75326 Direction Train Loss:2.93314 Radius Train Loss:0.05467 
+2026-02-21 13:17:40.309451: Val Loss:3.55269 Direction Val Loss:2.92233 Radius Val Loss:0.04202 
+2026-02-21 13:17:40.346974: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:17:41.120279: Learning rate adjusted to 0.0009850375627355537 
+2026-02-21 13:17:41.120565: 
+Epoch:  3 
+2026-02-21 13:19:09.607377: Train Loss:3.43930 Direction Train Loss:2.87748 Radius Train Loss:0.03746 
+2026-02-21 13:19:28.900624: Val Loss:3.32691 Direction Val Loss:2.87859 Radius Val Loss:0.02989 
+2026-02-21 13:19:28.941982: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:19:29.759278: Learning rate adjusted to 0.0009701505037879432 
+2026-02-21 13:19:29.759539: 
+Epoch:  4 
+2026-02-21 13:20:51.942568: Train Loss:3.29917 Direction Train Loss:2.83099 Radius Train Loss:0.03121 
+2026-02-21 13:21:11.574075: Val Loss:3.23294 Direction Val Loss:2.84167 Radius Val Loss:0.02608 
+2026-02-21 13:21:11.596531: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:21:12.323017: Learning rate adjusted to 0.0009553392067742221 
+2026-02-21 13:21:12.323308: 
+Epoch:  5 
+2026-02-21 13:22:35.104795: Train Loss:3.21542 Direction Train Loss:2.79232 Radius Train Loss:0.02821 
+2026-02-21 13:22:55.141678: Val Loss:3.17945 Direction Val Loss:2.81602 Radius Val Loss:0.02423 
+2026-02-21 13:22:55.175284: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:22:55.964450: Learning rate adjusted to 0.0009406040612287403 
+2026-02-21 13:22:55.964704: 
+Epoch:  6 
+2026-02-21 13:24:26.129677: Train Loss:3.11477 Direction Train Loss:2.75807 Radius Train Loss:0.02378 
+2026-02-21 13:24:46.065844: Val Loss:3.05498 Direction Val Loss:2.78834 Radius Val Loss:0.01778 
+2026-02-21 13:24:46.109941: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:24:46.885941: Learning rate adjusted to 0.0009259454627568516 
+2026-02-21 13:24:46.886245: 
+Epoch:  7 
+2026-02-21 13:26:12.425041: Train Loss:3.03443 Direction Train Loss:2.72388 Radius Train Loss:0.02070 
+2026-02-21 13:26:33.587178: Val Loss:3.03814 Direction Val Loss:2.75878 Radius Val Loss:0.01862 
+2026-02-21 13:26:33.624766: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:26:34.430248: Learning rate adjusted to 0.0009113638131942697 
+2026-02-21 13:26:34.610001: 
+Epoch:  8 
+2026-02-21 13:28:00.478888: Train Loss:3.00923 Direction Train Loss:2.69449 Radius Train Loss:0.02098 
+2026-02-21 13:28:19.732900: Val Loss:2.99424 Direction Val Loss:2.73253 Radius Val Loss:0.01745 
+2026-02-21 13:28:19.753772: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:28:20.494829: Learning rate adjusted to 0.0008968595207723448 
+2026-02-21 13:28:20.495080: 
+Epoch:  9 
+2026-02-21 13:29:45.329958: Train Loss:2.93715 Direction Train Loss:2.66326 Radius Train Loss:0.01826 
+2026-02-21 13:30:05.249221: Val Loss:2.94995 Direction Val Loss:2.70163 Radius Val Loss:0.01655 
+2026-02-21 13:30:05.279863: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:30:06.159776: Learning rate adjusted to 0.0008824330002895405 
+2026-02-21 13:30:06.201291: 
+Epoch:  10 
+2026-02-21 13:31:31.028640: Train Loss:2.90008 Direction Train Loss:2.63141 Radius Train Loss:0.01791 
+2026-02-21 13:31:50.611628: Val Loss:2.95511 Direction Val Loss:2.67660 Radius Val Loss:0.01857 
+2026-02-21 13:31:51.371429: Learning rate adjusted to 0.0008680846732894206 
+2026-02-21 13:31:51.387578: 
+Epoch:  11 
+2026-02-21 13:33:16.935092: Train Loss:2.90898 Direction Train Loss:2.61161 Radius Train Loss:0.01982 
+2026-02-21 13:33:37.358283: Val Loss:2.91406 Direction Val Loss:2.66084 Radius Val Loss:0.01688 
+2026-02-21 13:33:37.381830: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:33:38.177155: Learning rate adjusted to 0.0008538149682454625 
+2026-02-21 13:33:38.177572: 
+Epoch:  12 
+2026-02-21 13:35:06.453599: Train Loss:2.83308 Direction Train Loss:2.57734 Radius Train Loss:0.01705 
+2026-02-21 13:35:27.079527: Val Loss:2.87763 Direction Val Loss:2.63405 Radius Val Loss:0.01624 
+2026-02-21 13:35:27.109169: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:35:27.879269: Learning rate adjusted to 0.0008396243207530377 
+2026-02-21 13:35:27.895225: 
+Epoch:  13 
+2026-02-21 13:36:54.322405: Train Loss:2.80131 Direction Train Loss:2.54737 Radius Train Loss:0.01693 
+2026-02-21 13:37:18.200030: Val Loss:2.81134 Direction Val Loss:2.60389 Radius Val Loss:0.01383 
+2026-02-21 13:37:18.238686: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:37:19.173088: Learning rate adjusted to 0.0008255131737289237 
+2026-02-21 13:37:19.190578: 
+Epoch:  14 
+2026-02-21 13:38:42.644947: Train Loss:2.78066 Direction Train Loss:2.52477 Radius Train Loss:0.01706 
+2026-02-21 13:39:01.357421: Val Loss:2.78764 Direction Val Loss:2.58470 Radius Val Loss:0.01353 
+2026-02-21 13:39:01.380172: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:39:02.109718: Learning rate adjusted to 0.0008114819776187269 
+2026-02-21 13:39:02.128029: 
+Epoch:  15 
+2026-02-21 13:40:20.959688: Train Loss:2.72385 Direction Train Loss:2.49213 Radius Train Loss:0.01545 
+2026-02-21 13:40:40.001599: Val Loss:2.75558 Direction Val Loss:2.55405 Radius Val Loss:0.01344 
+2026-02-21 13:40:40.022547: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:40:40.841893: Learning rate adjusted to 0.0007975311906126306 
+2026-02-21 13:40:40.857352: 
+Epoch:  16 
+2026-02-21 13:42:05.915802: Train Loss:2.69599 Direction Train Loss:2.46194 Radius Train Loss:0.01560 
+2026-02-21 13:42:26.265113: Val Loss:2.73278 Direction Val Loss:2.53197 Radius Val Loss:0.01339 
+2026-02-21 13:42:26.288368: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:42:27.074590: Learning rate adjusted to 0.0007836612788698953 
+2026-02-21 13:42:27.086682: 
+Epoch:  17 
+2026-02-21 13:43:53.541885: Train Loss:2.64474 Direction Train Loss:2.42687 Radius Train Loss:0.01452 
+2026-02-21 13:44:12.971141: Val Loss:2.69221 Direction Val Loss:2.49652 Radius Val Loss:0.01305 
+2026-02-21 13:44:12.992936: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:44:13.771998: Learning rate adjusted to 0.0007698727167525811 
+2026-02-21 13:44:13.772240: 
+Epoch:  18 
+2026-02-21 13:45:41.212977: Train Loss:2.62435 Direction Train Loss:2.39895 Radius Train Loss:0.01503 
+2026-02-21 13:46:01.877903: Val Loss:2.66685 Direction Val Loss:2.47726 Radius Val Loss:0.01264 
+2026-02-21 13:46:01.901842: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:46:02.921677: Learning rate adjusted to 0.0007561659870689767 
+2026-02-21 13:46:02.921972: 
+Epoch:  19 
+2026-02-21 13:47:25.606188: Train Loss:2.58595 Direction Train Loss:2.36728 Radius Train Loss:0.01458 
+2026-02-21 13:47:44.925612: Val Loss:2.64567 Direction Val Loss:2.45024 Radius Val Loss:0.01303 
+2026-02-21 13:47:44.947484: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:47:45.690522: Learning rate adjusted to 0.0007425415813272682 
+2026-02-21 13:47:45.690799: 
+Epoch:  20 
+2026-02-21 13:49:07.674257: Train Loss:2.56290 Direction Train Loss:2.34039 Radius Train Loss:0.01483 
+2026-02-21 13:49:27.057952: Val Loss:2.67077 Direction Val Loss:2.42828 Radius Val Loss:0.01617 
+2026-02-21 13:49:27.832177: Learning rate adjusted to 0.0007290000000000002 
+2026-02-21 13:49:27.832449: 
+Epoch:  21 
+2026-02-21 13:50:49.699023: Train Loss:2.52794 Direction Train Loss:2.31115 Radius Train Loss:0.01445 
+2026-02-21 13:51:09.481577: Val Loss:2.58628 Direction Val Loss:2.39904 Radius Val Loss:0.01248 
+2026-02-21 13:51:09.503555: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:51:10.295649: Learning rate adjusted to 0.0007155417527999328 
+2026-02-21 13:51:10.295990: 
+Epoch:  22 
+2026-02-21 13:52:32.276537: Train Loss:2.48891 Direction Train Loss:2.28520 Radius Train Loss:0.01358 
+2026-02-21 13:52:51.631444: Val Loss:2.56329 Direction Val Loss:2.37117 Radius Val Loss:0.01281 
+2026-02-21 13:52:51.654521: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:52:52.352012: Learning rate adjusted to 0.0007021673589679316 
+2026-02-21 13:52:52.352260: 
+Epoch:  23 
+2026-02-21 13:54:14.298428: Train Loss:2.44003 Direction Train Loss:2.24619 Radius Train Loss:0.01292 
+2026-02-21 13:54:33.582889: Val Loss:2.55304 Direction Val Loss:2.34944 Radius Val Loss:0.01357 
+2026-02-21 13:54:33.604399: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:54:34.307158: Learning rate adjusted to 0.0006888773475735721 
+2026-02-21 13:54:34.307457: 
+Epoch:  24 
+2026-02-21 13:55:56.246586: Train Loss:2.42499 Direction Train Loss:2.22150 Radius Train Loss:0.01357 
+2026-02-21 13:56:15.493458: Val Loss:2.51594 Direction Val Loss:2.33124 Radius Val Loss:0.01231 
+2026-02-21 13:56:15.514550: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:56:16.202219: Learning rate adjusted to 0.0006756722578291934 
+2026-02-21 13:56:16.202482: 
+Epoch:  25 
+2026-02-21 13:57:38.271966: Train Loss:2.39989 Direction Train Loss:2.19864 Radius Train Loss:0.01342 
+2026-02-21 13:57:57.562217: Val Loss:2.48406 Direction Val Loss:2.29267 Radius Val Loss:0.01276 
+2026-02-21 13:57:57.584090: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 13:57:58.272520: Learning rate adjusted to 0.0006625526394181824 
+2026-02-21 13:57:58.272773: 
+Epoch:  26 
+2026-02-21 13:59:22.808165: Train Loss:2.36549 Direction Train Loss:2.16810 Radius Train Loss:0.01316 
+2026-02-21 13:59:43.423554: Val Loss:2.49587 Direction Val Loss:2.29387 Radius Val Loss:0.01347 
+2026-02-21 13:59:44.157591: Learning rate adjusted to 0.000649519052838329 
+2026-02-21 13:59:44.157967: 
+Epoch:  27 
+2026-02-21 14:01:07.992476: Train Loss:2.33996 Direction Train Loss:2.14051 Radius Train Loss:0.01330 
+2026-02-21 14:01:27.442750: Val Loss:2.45956 Direction Val Loss:2.26694 Radius Val Loss:0.01284 
+2026-02-21 14:01:27.464967: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:01:28.169456: Learning rate adjusted to 0.0006365720697611544 
+2026-02-21 14:01:28.169734: 
+Epoch:  28 
+2026-02-21 14:02:50.693120: Train Loss:2.31994 Direction Train Loss:2.11835 Radius Train Loss:0.01344 
+2026-02-21 14:03:10.126376: Val Loss:2.43009 Direction Val Loss:2.24696 Radius Val Loss:0.01221 
+2026-02-21 14:03:10.151104: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:03:10.879598: Learning rate adjusted to 0.0006237122734081798 
+2026-02-21 14:03:10.879942: 
+Epoch:  29 
+2026-02-21 14:04:32.499627: Train Loss:2.27946 Direction Train Loss:2.09525 Radius Train Loss:0.01228 
+2026-02-21 14:04:51.642245: Val Loss:2.40025 Direction Val Loss:2.22476 Radius Val Loss:0.01170 
+2026-02-21 14:04:51.667034: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:04:52.384520: Learning rate adjusted to 0.0006109402589451771 
+2026-02-21 14:04:52.384769: 
+Epoch:  30 
+2026-02-21 14:06:14.493668: Train Loss:2.24815 Direction Train Loss:2.06863 Radius Train Loss:0.01197 
+2026-02-21 14:06:33.849156: Val Loss:2.38458 Direction Val Loss:2.20710 Radius Val Loss:0.01183 
+2026-02-21 14:06:33.870879: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:06:34.615392: Learning rate adjusted to 0.0005982566338955214 
+2026-02-21 14:06:34.615655: 
+Epoch:  31 
+2026-02-21 14:07:56.361617: Train Loss:2.23006 Direction Train Loss:2.04859 Radius Train Loss:0.01210 
+2026-02-21 14:08:15.463034: Val Loss:2.35553 Direction Val Loss:2.18263 Radius Val Loss:0.01153 
+2026-02-21 14:08:15.488087: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:08:16.239133: Learning rate adjusted to 0.0005856620185738528 
+2026-02-21 14:08:16.239400: 
+Epoch:  32 
+2026-02-21 14:09:43.968467: Train Loss:2.22265 Direction Train Loss:2.02673 Radius Train Loss:0.01306 
+2026-02-21 14:10:04.845588: Val Loss:2.34008 Direction Val Loss:2.16594 Radius Val Loss:0.01161 
+2026-02-21 14:10:04.874349: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:10:05.914237: Learning rate adjusted to 0.0005731570465413472 
+2026-02-21 14:10:05.926727: 
+Epoch:  33 
+2026-02-21 14:11:31.945257: Train Loss:2.17288 Direction Train Loss:2.00424 Radius Train Loss:0.01124 
+2026-02-21 14:11:51.973597: Val Loss:2.31346 Direction Val Loss:2.15052 Radius Val Loss:0.01086 
+2026-02-21 14:11:52.003417: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:11:52.792482: Learning rate adjusted to 0.0005607423650840018 
+2026-02-21 14:11:52.805782: 
+Epoch:  34 
+2026-02-21 14:13:21.612520: Train Loss:2.15398 Direction Train Loss:1.98440 Radius Train Loss:0.01131 
+2026-02-21 14:13:42.549261: Val Loss:2.29966 Direction Val Loss:2.13022 Radius Val Loss:0.01130 
+2026-02-21 14:13:42.581968: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:13:43.366268: Learning rate adjusted to 0.0005484186357154541 
+2026-02-21 14:13:43.366536: 
+Epoch:  35 
+2026-02-21 14:15:08.877396: Train Loss:2.13700 Direction Train Loss:1.96041 Radius Train Loss:0.01177 
+2026-02-21 14:15:28.834043: Val Loss:2.27083 Direction Val Loss:2.10786 Radius Val Loss:0.01086 
+2026-02-21 14:15:28.869203: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:15:29.673719: Learning rate adjusted to 0.0005361865347059733 
+2026-02-21 14:15:29.705483: 
+Epoch:  36 
+2026-02-21 14:16:57.478907: Train Loss:2.13281 Direction Train Loss:1.95198 Radius Train Loss:0.01206 
+2026-02-21 14:17:18.043356: Val Loss:2.26179 Direction Val Loss:2.10329 Radius Val Loss:0.01057 
+2026-02-21 14:17:18.066787: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:17:18.872054: Learning rate adjusted to 0.0005240467536394058 
+2026-02-21 14:17:18.893017: 
+Epoch:  37 
+2026-02-21 14:18:44.621025: Train Loss:2.11194 Direction Train Loss:1.93174 Radius Train Loss:0.01201 
+2026-02-21 14:19:04.612473: Val Loss:2.25711 Direction Val Loss:2.09003 Radius Val Loss:0.01114 
+2026-02-21 14:19:04.635019: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:19:05.430246: Learning rate adjusted to 0.000512 
+2026-02-21 14:19:05.447137: 
+Epoch:  38 
+2026-02-21 14:20:33.385938: Train Loss:2.07482 Direction Train Loss:1.90816 Radius Train Loss:0.01111 
+2026-02-21 14:20:54.005909: Val Loss:2.25285 Direction Val Loss:2.07720 Radius Val Loss:0.01171 
+2026-02-21 14:20:54.040922: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:20:54.886519: Learning rate adjusted to 0.0005000469977912077 
+2026-02-21 14:20:54.901314: 
+Epoch:  39 
+2026-02-21 14:22:19.732921: Train Loss:2.05120 Direction Train Loss:1.89183 Radius Train Loss:0.01062 
+2026-02-21 14:22:39.599454: Val Loss:2.22228 Direction Val Loss:2.06235 Radius Val Loss:0.01066 
+2026-02-21 14:22:39.636668: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:22:40.439998: Learning rate adjusted to 0.0004881884881887323 
+2026-02-21 14:22:40.455129: 
+Epoch:  40 
+2026-02-21 14:24:08.127444: Train Loss:2.03220 Direction Train Loss:1.87483 Radius Train Loss:0.01049 
+2026-02-21 14:24:28.840685: Val Loss:2.19522 Direction Val Loss:2.04164 Radius Val Loss:0.01024 
+2026-02-21 14:24:28.872559: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:24:29.694895: Learning rate adjusted to 0.00047642523023030595 
+2026-02-21 14:24:29.700848: 
+Epoch:  41 
+2026-02-21 14:25:55.180064: Train Loss:1.99736 Direction Train Loss:1.85207 Radius Train Loss:0.00969 
+2026-02-21 14:26:17.570457: Val Loss:2.18159 Direction Val Loss:2.02541 Radius Val Loss:0.01041 
+2026-02-21 14:26:17.610740: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:26:18.534970: Learning rate adjusted to 0.00046475800154489 
+2026-02-21 14:26:18.535314: 
+Epoch:  42 
+2026-02-21 14:27:45.680914: Train Loss:1.99010 Direction Train Loss:1.83563 Radius Train Loss:0.01030 
+2026-02-21 14:28:05.422207: Val Loss:2.18928 Direction Val Loss:2.02491 Radius Val Loss:0.01096 
+2026-02-21 14:28:06.174050: Learning rate adjusted to 0.000453187599124248 
+2026-02-21 14:28:06.174329: 
+Epoch:  43 
+2026-02-21 14:29:30.200742: Train Loss:1.98476 Direction Train Loss:1.82365 Radius Train Loss:0.01074 
+2026-02-21 14:29:49.949374: Val Loss:2.18499 Direction Val Loss:2.01459 Radius Val Loss:0.01136 
+2026-02-21 14:29:50.698056: Learning rate adjusted to 0.00044171484014010674 
+2026-02-21 14:29:50.721373: 
+Epoch:  44 
+2026-02-21 14:31:14.691128: Train Loss:1.96450 Direction Train Loss:1.80917 Radius Train Loss:0.01036 
+2026-02-21 14:31:34.442076: Val Loss:2.15336 Direction Val Loss:1.99729 Radius Val Loss:0.01040 
+2026-02-21 14:31:34.483007: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:31:35.235566: Learning rate adjusted to 0.00043034056281043284 
+2026-02-21 14:31:35.250545: 
+Epoch:  45 
+2026-02-21 14:32:59.301720: Train Loss:1.93082 Direction Train Loss:1.78856 Radius Train Loss:0.00948 
+2026-02-21 14:33:19.345157: Val Loss:2.14007 Direction Val Loss:1.99066 Radius Val Loss:0.00996 
+2026-02-21 14:33:19.384764: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:33:20.342566: Learning rate adjusted to 0.0004190656273186815 
+2026-02-21 14:33:20.387984: 
+Epoch:  46 
+2026-02-21 14:34:44.961849: Train Loss:1.92527 Direction Train Loss:1.77594 Radius Train Loss:0.00996 
+2026-02-21 14:35:04.812445: Val Loss:2.13280 Direction Val Loss:1.98016 Radius Val Loss:0.01018 
+2026-02-21 14:35:04.834757: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:35:05.566862: Learning rate adjusted to 0.00040789091679026155 
+2026-02-21 14:35:05.583700: 
+Epoch:  47 
+2026-02-21 14:36:31.677836: Train Loss:1.91919 Direction Train Loss:1.76565 Radius Train Loss:0.01024 
+2026-02-21 14:36:52.499280: Val Loss:2.12796 Direction Val Loss:1.97561 Radius Val Loss:0.01016 
+2026-02-21 14:36:52.535656: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:36:53.284730: Learning rate adjusted to 0.0003968173383308749 
+2026-02-21 14:36:53.304425: 
+Epoch:  48 
+2026-02-21 14:38:21.036778: Train Loss:1.89340 Direction Train Loss:1.74913 Radius Train Loss:0.00962 
+2026-02-21 14:38:40.977451: Val Loss:2.14683 Direction Val Loss:1.96366 Radius Val Loss:0.01221 
+2026-02-21 14:38:41.716225: Learning rate adjusted to 0.0003858458241318675 
+2026-02-21 14:38:41.733385: 
+Epoch:  49 
+2026-02-21 14:40:06.023742: Train Loss:1.87336 Direction Train Loss:1.73748 Radius Train Loss:0.00906 
+2026-02-21 14:40:25.915904: Val Loss:2.09951 Direction Val Loss:1.95133 Radius Val Loss:0.00988 
+2026-02-21 14:40:25.960608: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:40:26.724059: Learning rate adjusted to 0.0003749773326482549 
+2026-02-21 14:40:26.738260: 
+Epoch:  50 
+2026-02-21 14:41:50.914537: Train Loss:1.86222 Direction Train Loss:1.72267 Radius Train Loss:0.00930 
+2026-02-21 14:42:10.732562: Val Loss:2.09228 Direction Val Loss:1.94925 Radius Val Loss:0.00954 
+2026-02-21 14:42:10.772768: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:42:11.533806: Learning rate adjusted to 0.0003642128498556854 
+2026-02-21 14:42:11.542355: 
+Epoch:  51 
+2026-02-21 14:43:35.122543: Train Loss:1.84943 Direction Train Loss:1.71162 Radius Train Loss:0.00919 
+2026-02-21 14:43:54.786722: Val Loss:2.07593 Direction Val Loss:1.93596 Radius Val Loss:0.00933 
+2026-02-21 14:43:54.809769: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:43:55.562420: Learning rate adjusted to 0.0003535533905932738 
+2026-02-21 14:43:55.579836: 
+Epoch:  52 
+2026-02-21 14:45:24.277844: Train Loss:1.82807 Direction Train Loss:1.69597 Radius Train Loss:0.00881 
+2026-02-21 14:45:44.578646: Val Loss:2.08993 Direction Val Loss:1.92308 Radius Val Loss:0.01112 
+2026-02-21 14:45:45.384068: Learning rate adjusted to 0.000343 
+2026-02-21 14:45:45.400455: 
+Epoch:  53 
+2026-02-21 14:47:15.637516: Train Loss:1.82002 Direction Train Loss:1.68561 Radius Train Loss:0.00896 
+2026-02-21 14:47:37.255027: Val Loss:2.07642 Direction Val Loss:1.92226 Radius Val Loss:0.01028 
+2026-02-21 14:47:38.089119: Learning rate adjusted to 0.00033255375505322445 
+2026-02-21 14:47:38.112530: 
+Epoch:  54 
+2026-02-21 14:49:10.744048: Train Loss:1.80100 Direction Train Loss:1.67268 Radius Train Loss:0.00855 
+2026-02-21 14:49:32.387930: Val Loss:2.05757 Direction Val Loss:1.91294 Radius Val Loss:0.00964 
+2026-02-21 14:49:32.422522: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:49:33.287308: Learning rate adjusted to 0.00032221576621884905 
+2026-02-21 14:49:33.299565: 
+Epoch:  55 
+2026-02-21 14:51:04.497484: Train Loss:1.78493 Direction Train Loss:1.66280 Radius Train Loss:0.00814 
+2026-02-21 14:51:26.133471: Val Loss:2.03893 Direction Val Loss:1.90109 Radius Val Loss:0.00919 
+2026-02-21 14:51:26.157136: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:51:26.999786: Learning rate adjusted to 0.0003119871792237623 
+2026-02-21 14:51:27.020148: 
+Epoch:  56 
+2026-02-21 14:52:57.064698: Train Loss:1.77887 Direction Train Loss:1.65287 Radius Train Loss:0.00840 
+2026-02-21 14:53:17.793293: Val Loss:2.04638 Direction Val Loss:1.89501 Radius Val Loss:0.01009 
+2026-02-21 14:53:18.642890: Learning rate adjusted to 0.00030186917696247155 
+2026-02-21 14:53:18.643198: 
+Epoch:  57 
+2026-02-21 14:54:46.448141: Train Loss:1.76845 Direction Train Loss:1.63799 Radius Train Loss:0.00870 
+2026-02-21 14:55:07.357715: Val Loss:2.03804 Direction Val Loss:1.89573 Radius Val Loss:0.00949 
+2026-02-21 14:55:07.392114: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:55:08.244876: Learning rate adjusted to 0.00029186298155127515 
+2026-02-21 14:55:08.252911: 
+Epoch:  58 
+2026-02-21 14:56:35.990863: Train Loss:1.74760 Direction Train Loss:1.62711 Radius Train Loss:0.00803 
+2026-02-21 14:56:55.743755: Val Loss:2.03645 Direction Val Loss:1.88457 Radius Val Loss:0.01013 
+2026-02-21 14:56:55.766550: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:56:56.757123: Learning rate adjusted to 0.00028196985654498606 
+2026-02-21 14:56:56.781971: 
+Epoch:  59 
+2026-02-21 14:58:24.762486: Train Loss:1.73427 Direction Train Loss:1.61752 Radius Train Loss:0.00778 
+2026-02-21 14:58:45.621391: Val Loss:2.01059 Direction Val Loss:1.87348 Radius Val Loss:0.00914 
+2026-02-21 14:58:45.659208: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 14:58:46.438736: Learning rate adjusted to 0.0002721911093331302 
+2026-02-21 14:58:46.461990: 
+Epoch:  60 
+2026-02-21 15:00:12.485644: Train Loss:1.73234 Direction Train Loss:1.61122 Radius Train Loss:0.00808 
+2026-02-21 15:00:32.487809: Val Loss:2.01301 Direction Val Loss:1.87769 Radius Val Loss:0.00902 
+2026-02-21 15:00:33.261117: Learning rate adjusted to 0.00026252809373474684 
+2026-02-21 15:00:33.291032: 
+Epoch:  61 
+2026-02-21 15:02:01.387610: Train Loss:1.71514 Direction Train Loss:1.59640 Radius Train Loss:0.00792 
+2026-02-21 15:02:22.175015: Val Loss:2.00114 Direction Val Loss:1.86274 Radius Val Loss:0.00923 
+2026-02-21 15:02:22.209259: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:02:22.984869: Learning rate adjusted to 0.0002529822128134704 
+2026-02-21 15:02:23.003324: 
+Epoch:  62 
+2026-02-21 15:03:48.743194: Train Loss:1.68998 Direction Train Loss:1.58230 Radius Train Loss:0.00718 
+2026-02-21 15:04:08.551882: Val Loss:1.99974 Direction Val Loss:1.86385 Radius Val Loss:0.00906 
+2026-02-21 15:04:08.587897: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:04:09.368378: Learning rate adjusted to 0.00024355492193753756 
+2026-02-21 15:04:09.390693: 
+Epoch:  63 
+2026-02-21 15:05:37.331547: Train Loss:1.69125 Direction Train Loss:1.57929 Radius Train Loss:0.00746 
+2026-02-21 15:05:58.146192: Val Loss:1.98881 Direction Val Loss:1.85653 Radius Val Loss:0.00882 
+2026-02-21 15:05:58.175713: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:05:58.950710: Learning rate adjusted to 0.0002342477321128211 
+2026-02-21 15:05:58.969636: 
+Epoch:  64 
+2026-02-21 15:07:24.357014: Train Loss:1.67023 Direction Train Loss:1.56473 Radius Train Loss:0.00703 
+2026-02-21 15:07:44.194933: Val Loss:1.97749 Direction Val Loss:1.84745 Radius Val Loss:0.00867 
+2026-02-21 15:07:44.218221: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:07:45.033125: Learning rate adjusted to 0.00022506221362103413 
+2026-02-21 15:07:45.048662: 
+Epoch:  65 
+2026-02-21 15:09:13.033680: Train Loss:1.66172 Direction Train Loss:1.55723 Radius Train Loss:0.00697 
+2026-02-21 15:09:33.923567: Val Loss:1.97576 Direction Val Loss:1.84540 Radius Val Loss:0.00869 
+2026-02-21 15:09:33.958162: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:09:34.728306: Learning rate adjusted to 0.000216 
+2026-02-21 15:09:34.735918: 
+Epoch:  66 
+2026-02-21 15:10:59.888435: Train Loss:1.65558 Direction Train Loss:1.55055 Radius Train Loss:0.00700 
+2026-02-21 15:11:19.541061: Val Loss:1.96912 Direction Val Loss:1.83791 Radius Val Loss:0.00875 
+2026-02-21 15:11:19.578798: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:11:20.351053: Learning rate adjusted to 0.00020706279240848656 
+2026-02-21 15:11:20.381631: 
+Epoch:  67 
+2026-02-21 15:12:47.743059: Train Loss:1.65086 Direction Train Loss:1.54160 Radius Train Loss:0.00728 
+2026-02-21 15:13:08.499719: Val Loss:1.96867 Direction Val Loss:1.83441 Radius Val Loss:0.00895 
+2026-02-21 15:13:08.533338: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:13:09.326231: Learning rate adjusted to 0.0001982523644247402 
+2026-02-21 15:13:09.352243: 
+Epoch:  68 
+2026-02-21 15:14:34.179143: Train Loss:1.64813 Direction Train Loss:1.53404 Radius Train Loss:0.00761 
+2026-02-21 15:14:53.962381: Val Loss:1.97590 Direction Val Loss:1.83217 Radius Val Loss:0.00958 
+2026-02-21 15:14:54.767518: Learning rate adjusted to 0.00018957056733575492 
+2026-02-21 15:14:54.789640: 
+Epoch:  69 
+2026-02-21 15:16:22.355320: Train Loss:1.63904 Direction Train Loss:1.52655 Radius Train Loss:0.00750 
+2026-02-21 15:16:43.016998: Val Loss:1.95309 Direction Val Loss:1.82384 Radius Val Loss:0.00862 
+2026-02-21 15:16:43.060432: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:16:43.869948: Learning rate adjusted to 0.00018101933598375613 
+2026-02-21 15:16:43.875587: 
+Epoch:  70 
+2026-02-21 15:18:09.316607: Train Loss:1.62891 Direction Train Loss:1.52044 Radius Train Loss:0.00723 
+2026-02-21 15:18:29.036377: Val Loss:1.95480 Direction Val Loss:1.82007 Radius Val Loss:0.00898 
+2026-02-21 15:18:29.828717: Learning rate adjusted to 0.00017260069524773072 
+2026-02-21 15:18:29.850695: 
+Epoch:  71 
+2026-02-21 15:19:57.195756: Train Loss:1.62915 Direction Train Loss:1.51627 Radius Train Loss:0.00753 
+2026-02-21 15:20:17.889972: Val Loss:1.95420 Direction Val Loss:1.81523 Radius Val Loss:0.00926 
+2026-02-21 15:20:18.701421: Learning rate adjusted to 0.00016431676725154988 
+2026-02-21 15:20:18.729630: 
+Epoch:  72 
+2026-02-21 15:21:43.434024: Train Loss:1.61519 Direction Train Loss:1.50531 Radius Train Loss:0.00733 
+2026-02-21 15:22:03.347468: Val Loss:1.94600 Direction Val Loss:1.81512 Radius Val Loss:0.00873 
+2026-02-21 15:22:03.370321: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:22:04.405612: Learning rate adjusted to 0.00015616977940690065 
+2026-02-21 15:22:04.425364: 
+Epoch:  73 
+2026-02-21 15:23:32.448461: Train Loss:1.59628 Direction Train Loss:1.49789 Radius Train Loss:0.00656 
+2026-02-21 15:23:53.219057: Val Loss:1.94429 Direction Val Loss:1.81313 Radius Val Loss:0.00874 
+2026-02-21 15:23:53.251602: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:23:54.063162: Learning rate adjusted to 0.0001481620734196171 
+2026-02-21 15:23:54.073174: 
+Epoch:  74 
+2026-02-21 15:25:20.176281: Train Loss:1.58400 Direction Train Loss:1.48883 Radius Train Loss:0.00634 
+2026-02-21 15:25:40.057099: Val Loss:1.93406 Direction Val Loss:1.80438 Radius Val Loss:0.00865 
+2026-02-21 15:25:40.080244: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:25:40.888451: Learning rate adjusted to 0.00014029611541307906 
+2026-02-21 15:25:40.916652: 
+Epoch:  75 
+2026-02-21 15:27:09.119146: Train Loss:1.57795 Direction Train Loss:1.48359 Radius Train Loss:0.00629 
+2026-02-21 15:27:30.013937: Val Loss:1.93767 Direction Val Loss:1.80750 Radius Val Loss:0.00868 
+2026-02-21 15:27:30.826678: Learning rate adjusted to 0.00013257450735341242 
+2026-02-21 15:27:30.845557: 
+Epoch:  76 
+2026-02-21 15:28:56.182105: Train Loss:1.57155 Direction Train Loss:1.47709 Radius Train Loss:0.00630 
+2026-02-21 15:29:15.713375: Val Loss:1.93104 Direction Val Loss:1.80596 Radius Val Loss:0.00834 
+2026-02-21 15:29:15.739338: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:29:16.546667: Learning rate adjusted to 0.000125 
+2026-02-21 15:29:16.566326: 
+Epoch:  77 
+2026-02-21 15:30:44.164735: Train Loss:1.57072 Direction Train Loss:1.47040 Radius Train Loss:0.00669 
+2026-02-21 15:31:04.997192: Val Loss:1.92405 Direction Val Loss:1.79839 Radius Val Loss:0.00838 
+2026-02-21 15:31:05.034092: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:31:05.845557: Learning rate adjusted to 0.00011757550765359254 
+2026-02-21 15:31:05.861953: 
+Epoch:  78 
+2026-02-21 15:32:31.565208: Train Loss:1.55186 Direction Train Loss:1.46490 Radius Train Loss:0.00580 
+2026-02-21 15:32:51.456807: Val Loss:1.92239 Direction Val Loss:1.79455 Radius Val Loss:0.00852 
+2026-02-21 15:32:51.497587: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:32:52.320035: Learning rate adjusted to 0.00011030412503619253 
+2026-02-21 15:32:52.340966: 
+Epoch:  79 
+2026-02-21 15:34:20.275078: Train Loss:1.55711 Direction Train Loss:1.46220 Radius Train Loss:0.00633 
+2026-02-21 15:34:41.134778: Val Loss:1.92195 Direction Val Loss:1.79673 Radius Val Loss:0.00835 
+2026-02-21 15:34:41.169059: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:34:41.988626: Learning rate adjusted to 0.00010318914671611543 
+2026-02-21 15:34:41.988945: 
+Epoch:  80 
+2026-02-21 15:36:06.982027: Train Loss:1.54661 Direction Train Loss:1.45515 Radius Train Loss:0.00610 
+2026-02-21 15:36:26.763406: Val Loss:1.91992 Direction Val Loss:1.79529 Radius Val Loss:0.00831 
+2026-02-21 15:36:26.786205: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:36:27.608870: Learning rate adjusted to 9.623408959407263e-05 
+2026-02-21 15:36:27.625563: 
+Epoch:  81 
+2026-02-21 15:37:55.249807: Train Loss:1.54715 Direction Train Loss:1.45183 Radius Train Loss:0.00636 
+2026-02-21 15:38:15.924483: Val Loss:1.91384 Direction Val Loss:1.78930 Radius Val Loss:0.00830 
+2026-02-21 15:38:15.960952: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:38:16.786329: Learning rate adjusted to 8.944271909999156e-05 
+2026-02-21 15:38:16.796206: 
+Epoch:  82 
+2026-02-21 15:39:41.615131: Train Loss:1.54370 Direction Train Loss:1.44979 Radius Train Loss:0.00626 
+2026-02-21 15:40:01.538778: Val Loss:1.92226 Direction Val Loss:1.78722 Radius Val Loss:0.00900 
+2026-02-21 15:40:02.388293: Learning rate adjusted to 8.281907992727276e-05 
+2026-02-21 15:40:02.408609: 
+Epoch:  83 
+2026-02-21 15:41:29.901300: Train Loss:1.53353 Direction Train Loss:1.43927 Radius Train Loss:0.00628 
+2026-02-21 15:41:50.638070: Val Loss:1.91429 Direction Val Loss:1.78755 Radius Val Loss:0.00845 
+2026-02-21 15:41:51.417436: Learning rate adjusted to 7.636753236814717e-05 
+2026-02-21 15:41:51.429305: 
+Epoch:  84 
+2026-02-21 15:43:16.247288: Train Loss:1.52624 Direction Train Loss:1.43680 Radius Train Loss:0.00596 
+2026-02-21 15:43:35.971543: Val Loss:1.91542 Direction Val Loss:1.78435 Radius Val Loss:0.00874 
+2026-02-21 15:43:36.770481: Learning rate adjusted to 7.009279563550025e-05 
+2026-02-21 15:43:36.791604: 
+Epoch:  85 
+2026-02-21 15:45:04.416570: Train Loss:1.51910 Direction Train Loss:1.42955 Radius Train Loss:0.00597 
+2026-02-21 15:45:25.148483: Val Loss:1.91233 Direction Val Loss:1.78595 Radius Val Loss:0.00843 
+2026-02-21 15:45:25.193428: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:45:26.220895: Learning rate adjusted to 6.400000000000001e-05 
+2026-02-21 15:45:26.237177: 
+Epoch:  86 
+2026-02-21 15:46:51.707833: Train Loss:1.51801 Direction Train Loss:1.42749 Radius Train Loss:0.00603 
+2026-02-21 15:47:11.434106: Val Loss:1.90568 Direction Val Loss:1.78323 Radius Val Loss:0.00816 
+2026-02-21 15:47:11.471421: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:47:12.222761: Learning rate adjusted to 5.809475019311126e-05 
+2026-02-21 15:47:12.232976: 
+Epoch:  87 
+2026-02-21 15:48:39.748047: Train Loss:1.51059 Direction Train Loss:1.42484 Radius Train Loss:0.00572 
+2026-02-21 15:49:00.465133: Val Loss:1.90491 Direction Val Loss:1.77889 Radius Val Loss:0.00840 
+2026-02-21 15:49:00.510443: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:49:01.271386: Learning rate adjusted to 5.238320341483519e-05 
+2026-02-21 15:49:01.286841: 
+Epoch:  88 
+2026-02-21 15:50:27.265095: Train Loss:1.50370 Direction Train Loss:1.42219 Radius Train Loss:0.00543 
+2026-02-21 15:50:47.048287: Val Loss:1.90272 Direction Val Loss:1.77708 Radius Val Loss:0.00838 
+2026-02-21 15:50:47.088174: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:50:47.838034: Learning rate adjusted to 4.687216658103186e-05 
+2026-02-21 15:50:47.849232: 
+Epoch:  89 
+2026-02-21 15:52:15.477305: Train Loss:1.50920 Direction Train Loss:1.42022 Radius Train Loss:0.00593 
+2026-02-21 15:52:36.105065: Val Loss:1.90249 Direction Val Loss:1.77608 Radius Val Loss:0.00843 
+2026-02-21 15:52:36.142692: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:52:36.906830: Learning rate adjusted to 4.1569219381653056e-05 
+2026-02-21 15:52:36.932280: 
+Epoch:  90 
+2026-02-21 15:54:02.522294: Train Loss:1.49088 Direction Train Loss:1.41503 Radius Train Loss:0.00506 
+2026-02-21 15:54:22.434583: Val Loss:1.89719 Direction Val Loss:1.77385 Radius Val Loss:0.00822 
+2026-02-21 15:54:22.467631: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:54:23.227611: Learning rate adjusted to 3.648287269390939e-05 
+2026-02-21 15:54:23.244645: 
+Epoch:  91 
+2026-02-21 15:55:50.693795: Train Loss:1.50453 Direction Train Loss:1.41305 Radius Train Loss:0.00610 
+2026-02-21 15:56:11.226884: Val Loss:1.90091 Direction Val Loss:1.77523 Radius Val Loss:0.00838 
+2026-02-21 15:56:12.003222: Learning rate adjusted to 3.162277660168378e-05 
+2026-02-21 15:56:12.003497: 
+Epoch:  92 
+2026-02-21 15:57:37.346005: Train Loss:1.49662 Direction Train Loss:1.41069 Radius Train Loss:0.00573 
+2026-02-21 15:57:57.337466: Val Loss:1.89842 Direction Val Loss:1.76902 Radius Val Loss:0.00863 
+2026-02-21 15:57:58.105490: Learning rate adjusted to 2.6999999999999985e-05 
+2026-02-21 15:57:58.127623: 
+Epoch:  93 
+2026-02-21 15:59:25.775330: Train Loss:1.48801 Direction Train Loss:1.40770 Radius Train Loss:0.00535 
+2026-02-21 15:59:46.667100: Val Loss:1.89427 Direction Val Loss:1.76999 Radius Val Loss:0.00829 
+2026-02-21 15:59:46.713243: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 15:59:47.477966: Learning rate adjusted to 2.2627416997969502e-05 
+2026-02-21 15:59:47.498241: 
+Epoch:  94 
+2026-02-21 16:01:12.986290: Train Loss:1.48942 Direction Train Loss:1.40749 Radius Train Loss:0.00546 
+2026-02-21 16:01:32.864437: Val Loss:1.89281 Direction Val Loss:1.77176 Radius Val Loss:0.00807 
+2026-02-21 16:01:32.907985: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 16:01:33.661169: Learning rate adjusted to 1.8520259177452116e-05 
+2026-02-21 16:01:33.668989: 
+Epoch:  95 
+2026-02-21 16:03:01.110111: Train Loss:1.48424 Direction Train Loss:1.40487 Radius Train Loss:0.00529 
+2026-02-21 16:03:21.879291: Val Loss:1.89287 Direction Val Loss:1.77170 Radius Val Loss:0.00808 
+2026-02-21 16:03:22.653100: Learning rate adjusted to 1.4696938456699088e-05 
+2026-02-21 16:03:22.672913: 
+Epoch:  96 
+2026-02-21 16:04:48.186594: Train Loss:1.48336 Direction Train Loss:1.40250 Radius Train Loss:0.00539 
+2026-02-21 16:05:08.093215: Val Loss:1.89888 Direction Val Loss:1.77333 Radius Val Loss:0.00837 
+2026-02-21 16:05:08.840747: Learning rate adjusted to 1.1180339887498964e-05 
+2026-02-21 16:05:08.851962: 
+Epoch:  97 
+2026-02-21 16:06:35.775690: Train Loss:1.48930 Direction Train Loss:1.40175 Radius Train Loss:0.00584 
+2026-02-21 16:06:56.531468: Val Loss:1.90494 Direction Val Loss:1.77004 Radius Val Loss:0.00899 
+2026-02-21 16:06:57.324708: Learning rate adjusted to 8.000000000000011e-06 
+2026-02-21 16:06:57.347615: 
+Epoch:  98 
+2026-02-21 16:08:22.904755: Train Loss:1.47624 Direction Train Loss:1.40060 Radius Train Loss:0.00504 
+2026-02-21 16:08:42.755351: Val Loss:1.88977 Direction Val Loss:1.76720 Radius Val Loss:0.00817 
+2026-02-21 16:08:42.791914: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 16:08:43.571172: Learning rate adjusted to 5.196152422706639e-06 
+2026-02-21 16:08:43.585033: 
+Epoch:  99 
+2026-02-21 16:10:11.437876: Train Loss:1.47894 Direction Train Loss:1.39977 Radius Train Loss:0.00528 
+2026-02-21 16:10:32.135433: Val Loss:1.88455 Direction Val Loss:1.76570 Radius Val Loss:0.00792 
+2026-02-21 16:10:32.170029: Saving parameters to ../checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl 
+2026-02-21 16:10:32.951661: Learning rate adjusted to 2.828427124746194e-06 
+2026-02-21 16:10:32.965264: 
+Epoch:  100 
+2026-02-21 16:11:58.936361: Train Loss:1.47647 Direction Train Loss:1.40010 Radius Train Loss:0.00509 
+2026-02-21 16:12:18.905727: Val Loss:1.89015 Direction Val Loss:1.76917 Radius Val Loss:0.00807 
+2026-02-21 16:12:19.920417: Learning rate adjusted to 1.0000000000000014e-06 

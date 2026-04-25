@@ -9,3 +9,7 @@ out
 gen
 data_process_tools/patch_data/
 data_process_tools/train_data/
+checkpoint/classification_checkpoints/centerline_net_all_model_s0.pkl
+checkpoint/ostia_checkpoints/ostiapoints_net_all_model_s0.pkl
+checkpoint/seeds_checkpoints/seedspoints_net_all_model_s0.pkl
+venv/
